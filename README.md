@@ -1,5 +1,5 @@
 # Shop-shop
-- Built walking through module 22 of Uconn's coding bootcamp
+- Forked from the shop-shop repo to refactor to Redux state management
 
 ## Deployed application and GitHub
 - [Deployed application](https://enigmatic-tundra-15660.herokuapp.com/)
