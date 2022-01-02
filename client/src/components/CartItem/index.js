@@ -8,7 +8,7 @@ import { idbPromise } from '../../utils/helpers';
 import { useDispatch } from 'react-redux';
 
 const CartItem = ({ item }) => {
-
+  // make dispatch const from useDispatch
   const dispatch = useDispatch();
 
   const removeFromCart = item => {

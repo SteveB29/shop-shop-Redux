@@ -19,6 +19,7 @@ import { idbPromise } from "../utils/helpers";
 import { useSelector, useDispatch } from 'react-redux'
 
 function Detail() {
+  // make dispatch const from useDispatch, don't have to update existing dispatch code
   const dispatch = useDispatch();
   const { id } = useParams();
 
@@ -26,6 +27,7 @@ function Detail() {
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
+  // select products and cart from state
   const products = useSelector(state => state.products);
   const cart = useSelector(state => state.cart);
 

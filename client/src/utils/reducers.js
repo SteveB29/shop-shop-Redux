@@ -9,7 +9,6 @@ import {
   CLEAR_CART,
   TOGGLE_CART
 } from "./actions";
-// import { useReducer } from 'react';
 
 export const reducer = (state, action) => {
   switch (action.type) {

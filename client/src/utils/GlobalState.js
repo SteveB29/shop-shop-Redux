@@ -1,6 +1,5 @@
 import { reducer } from "./reducers";
-import { createStore } from "redux"
-// import { idbPromise } from "./helpers";
+import { createStore } from "redux";
 
 const initialState = {
   products: [],

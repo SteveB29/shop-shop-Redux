@@ -13,9 +13,12 @@ import { useSelector, useDispatch } from 'react-redux';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
+  // make dispatch const from useDispatch
   const dispatch = useDispatch();
+  // select cart and cartOpen from state
   const cart = useSelector(state => state.cart);
   const cartOpen = useSelector(state => state.cartOpen);
+  
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
