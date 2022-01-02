@@ -6,6 +6,8 @@ import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 
 import { idbPromise } from "../../utils/helpers";
 
+import { useSelector, useDispatch } from 'react-redux';
+
 function ProductItem(item) {
   const {
     image,
@@ -15,12 +17,11 @@ function ProductItem(item) {
     quantity
   } = item;
 
-  // const [state, dispatch] = useStoreContext();
-
-  const { cart } = state;
-
+  const cart = useSelector(state => state.cart);
+  const dispatch = useDispatch();
 
   const addToCart = () => {
+    console.log('added to cart');
     // find the cart item with the matching id
     const itemInCart = cart.find((cartItem) => cartItem._id === _id);
 
