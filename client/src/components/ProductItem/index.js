@@ -21,7 +21,6 @@ function ProductItem(item) {
   const dispatch = useDispatch();
 
   const addToCart = () => {
-    console.log('added to cart');
     // find the cart item with the matching id
     const itemInCart = cart.find((cartItem) => cartItem._id === _id);
 
