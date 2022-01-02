@@ -17,7 +17,7 @@ import Nav from './components/Nav';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
 import store from './utils/GlobalState';
 
 const httpLink = createHttpLink({

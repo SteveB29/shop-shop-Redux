@@ -15,7 +15,7 @@ function ProductItem(item) {
     quantity
   } = item;
 
-  const [state, dispatch] = useStoreContext();
+  // const [state, dispatch] = useStoreContext();
 
   const { cart } = state;
 
